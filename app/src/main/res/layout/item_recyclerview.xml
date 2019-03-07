@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/superHeroImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_toRightOf="@id/superHeroImage"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/superHeroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iron Man"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            />
+        <TextView
+            android:id="@+id/realName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/superHeroName"
+            android:text="Real name : Tony stark"/>
+
+        <TextView
+            android:id="@+id/createdby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/realName"
+            android:text="Created By: xyz"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
